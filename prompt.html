@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+          function myfunction(){
+            let x= prompt("enter your favourite drink");
+            let text;
+            switch(x)
+            {
+            case "pepsi":
+            text="it is a soft drink";
+            break;
+            case "sprite":
+            text="it is a cool drink";
+            break;
+            case "thumsup":
+            text="it is a hot drink";
+            break;
+            default : 
+            text="this is not a drink";
+            break;
+          }
+          {
+            document.getElementById("demo").innerHTML=text;
+          }
+        }
+        </script>
+        <button type="button" onclick="myfunction()">click</button>
+        <p id="demo"></p>
+    </body>
+</html>

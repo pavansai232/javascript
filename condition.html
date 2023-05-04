@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function pavan()
+            {
+                if(document.getElementById("c1").value==document.getElementById("c2").value)
+                {
+                    document.getElementById("book").innerHTML="first number and second number is equal";
+                }
+                else if(document.getElementById("c1").value>document.getElementById("c2").value)
+                {
+                    document.getElementById("book").innerHTML="first number is greater than second number";
+                }               
+                else{
+                    document.getElementById("book").innerHTML="second number is greater than first number";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        enter the first number:
+        <input type="text" id="c1"><br><br>
+        enter the second number:
+        <input type="text" id="c2"><br><br>
+        <button type="button" onclick="pavan()">click me</button>
+        <div id="book"></div>
+    </body>
+</html>

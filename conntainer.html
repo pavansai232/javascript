@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-image: url('girl.avif');
+            }
+            #login-Container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                border-radius: 10%;
+                 padding: 10px;
+                 padding-left: 1px;
+                 padding-top: 1px;
+                 background-color:darkgrey;
+                 width: 400px;
+           }
+           .row{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+       }
+      label{
+          display:inline-block;
+         width:200px;
+           text-align: right;
+            margin-right: 10px;
+            color:brown;
+
+      }
+      h2{
+        color: firebrick;
+      
+      }
+        </style>
+        <script>
+            function pa(){
+                window.open("sahi.html")
+            }
+        </script>
+    </head>
+    <body>
+         <div id="login-container">
+            <h2>LOGIN FORM</h2>
+            <div class="row">
+        <label>FIRST NAME:</label>
+         <input type="text"  name="FIRST NAME">
+            </div>
+            <div class="row">
+         <label>LAST NAME:</label>
+         <input type="text" name="LAST NAME">
+            </div>
+            <div class="row">
+         <label>E-MAIL ADDRESS:</label>
+         <input type="text" name="E-MAIL ADDRESS">
+            </div>
+            <div class="row">
+                <label>PASSWORD:</label>
+                <input type="password" name="PASSWORD">
+            </div>
+            <div class="row">
+                <label>GENDER:</label>
+            <input type="radio" name="gender">male
+            <input type="radio" name="gender">female
+            <input type="radio" name="gender">others
+            </div>
+            <input type="button" value="submit" onclick="pa()">  
+         </div>
+    </body>
+</html>
